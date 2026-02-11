@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![AgentCamp 2026](branding/agentcamp-2026-graphics-1536x1024.png)
+![AgentCamp 2026](branding/AgentCamp%202026%20-%20Madrid.png)
 
 **El evento de Inteligencia Artificial más grande de la comunidad Microsoft**
 
