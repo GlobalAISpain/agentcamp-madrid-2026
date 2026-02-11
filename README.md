@@ -1,4 +1,4 @@
-# 🤖 AgentCamp 2026 - Madrid
+# AgentCamp 2026 - Madrid
 
 <div align="center">
 
