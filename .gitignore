@@ -1,0 +1,50 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Personal notes (not for public)
+PRIVATE_NOTES.md
+TODO_PRIVATE.md
+
+# Sensitive data
+*.key
+*.pem
+credentials/
+secrets/
+
+# Build outputs
+dist/
+build/
+out/
+
+# Node modules if using any tooling
+node_modules/
+
+# Python cache if using Python tools
+__pycache__/
+*.pyc
+*.pyo
+.Python
+venv/
+ENV/
+
+# Backup files
+*.bak
+*.backup
