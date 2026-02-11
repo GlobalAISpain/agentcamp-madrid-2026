@@ -111,6 +111,20 @@ Este repositorio está licenciado bajo [MIT License](LICENSE).
 
 El contenido educativo y materiales proporcionados por speakers pueden tener sus propias licencias.
 
+## 🤖 AI-Powered Repository
+
+Este repositorio está potenciado por un agente AI con capacidades avanzadas usando Model Context Protocol (MCP). 
+
+📖 **[Guía del Agente AI](AI_AGENT_GUIDE.md)** - Aprende cómo usar el agente para gestión del evento, creación de contenido y automatización.
+
+### Capacidades del Agente
+
+- 📝 Creación y edición de contenido
+- 🔍 Investigación de tecnologías AI en tiempo real
+- 📊 Gestión de speakers, sponsors y agenda
+- 🐛 Integración con GitHub (issues, PRs, workflows)
+- 💾 Memoria persistente entre sesiones
+
 ## 🙏 Agradecimientos
 
 Gracias a todos los speakers, sponsors, voluntarios y asistentes que hacen posible AgentCamp Madrid.
