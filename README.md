@@ -26,12 +26,14 @@ Aprenderás de expertos en tecnología Microsoft cómo implementar soluciones de
 
 - 🤖 **Agentes de IA** y arquitecturas multiagente
 - 🔌 **Model Context Protocol (MCP)** - El nuevo estándar de conectividad
-- 🧠 **Azure OpenAI** y modelos LLM avanzados
+- 🏭 **Microsoft Foundry** - La plataforma unificada para diseñar, personalizar y gestionar aplicaciones y agentes de IA a escala
+- 🧠 **Foundry Models** - Catálogo completo de modelos LLM (incluyendo Azure OpenAI, Llama, Phi, DeepSeek-R1)
+- 🎯 **Foundry Agent Service** - Orquestación y hosting de agentes para automatizar procesos
+- 💡 **Foundry IQ** - Base de conocimiento inteligente para conectar con agentes
 - ⚡ **Microsoft Copilot** y sus múltiples integraciones
-- 🛠️ **Azure AI Foundry** y herramientas de desarrollo
 - 📊 **Microsoft Fabric** y análisis de datos con IA
 - 🎓 **Azure Machine Learning** y frameworks open source (PyTorch, ML.NET)
-- 🏗️ **Cognitive Services** y servicios previamente entrenados
+- 🛠️ **Foundry Tools** - Speech, Vision, Translator, Language, Document Intelligence
 
 ---
 
