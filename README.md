@@ -227,7 +227,33 @@ Estamos comprometidos en proporcionar una experiencia libre de acoso para todos,
 
 ---
 
-## 📄 Licencia
+## � Descarga el Paquete Completo
+
+¿Necesitas todos los materiales del evento en un solo archivo? Descarga nuestro **paquete de release oficial**:
+
+### 💾 Última Release
+
+[![Latest Release](https://img.shields.io/github/v/release/GlobalAISpain/agentcamp-madrid-2026?style=for-the-badge&logo=github)](https://github.com/GlobalAISpain/agentcamp-madrid-2026/releases/latest)
+
+**[⬇️ Descargar v1.0.0](https://github.com/GlobalAISpain/agentcamp-madrid-2026/releases/latest)**
+
+Cada paquete de release incluye:
+- 📄 Documentación completa del evento
+- 🎨 Logos y materiales de branding en alta calidad
+- 🎤 Información de speakers y sesiones
+- 🤝 Detalles de patrocinadores
+- 📋 Plantillas de PowerPoint oficiales
+- ✅ Checksums SHA256 para verificar integridad
+
+**Formatos disponibles:**
+- 📦 **ZIP** - Recomendado para Windows
+- 📦 **TAR.GZ** - Recomendado para Linux/macOS
+
+> 💡 **Tip**: Usa los archivos `.sha256` incluidos para verificar que tu descarga es auténtica y completa.
+
+---
+
+## �📄 Licencia
 
 Este repositorio está bajo la licencia especificada en [LICENSE](LICENSE).
 

@@ -1,0 +1,213 @@
+name: Create Release Package
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version number (e.g., 1.0.0)'
+        required: true
+        default: '1.0.0'
+      prerelease:
+        description: 'Mark as pre-release'
+        required: false
+        type: boolean
+        default: false
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+
+jobs:
+  create-release:
+    name: Create Release Package
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set Version
+        id: version
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            VERSION="${{ github.event.inputs.version }}"
+          else
+            VERSION=${GITHUB_REF#refs/tags/v}
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "tag=v$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Create Release Package
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          PACKAGE_NAME="agentcamp-madrid-2026-v${VERSION}"
+          
+          echo "📦 Creating release package for version ${VERSION}..."
+          
+          # Crear directorio temporal
+          mkdir -p release-temp/$PACKAGE_NAME
+          
+          # Copiar archivos principales
+          cp README.md release-temp/$PACKAGE_NAME/
+          cp LICENSE release-temp/$PACKAGE_NAME/
+          cp CODE_OF_CONDUCT.md release-temp/$PACKAGE_NAME/
+          
+          # Copiar carpetas de contenido
+          cp -r branding release-temp/$PACKAGE_NAME/
+          cp -r speakers release-temp/$PACKAGE_NAME/
+          cp -r sponsors release-temp/$PACKAGE_NAME/
+          cp -r templates release-temp/$PACKAGE_NAME/
+          
+          # Crear archivo de información de release
+          cat > release-temp/$PACKAGE_NAME/RELEASE_INFO.txt << EOF
+          AgentCamp 2026 - Madrid
+          Release Version: ${VERSION}
+          Release Date: $(date +"%Y-%m-%d")
+          
+          Este paquete contiene todos los materiales del evento:
+          
+          📁 Contenido incluido:
+          - 📄 README.md - Información completa del evento
+          - 🎨 branding/ - Logos, gráficos y materiales de marca
+          - 🎤 speakers/ - Información de los ponentes
+          - 🤝 sponsors/ - Información de los patrocinadores
+          - 📋 templates/ - Plantillas de presentación
+          - 📜 LICENSE - Licencia del proyecto
+          - 🤝 CODE_OF_CONDUCT.md - Código de conducta
+          
+          🌐 Website: https://www.globalai.es
+          📅 Agenda: https://agentcamp.sessionize.com
+          🎟️ Entradas: https://www.eventbrite.es/e/entradas-agentcamp-2026-madrid-aka-global-ai-bootcamp-1980480271806
+          
+          📍 Ubicación:
+          - Workshops (27 Feb): NTT DATA Spain, Madrid
+          - Conferencia (1 Mar): Teatro Goya Multiespacio, Madrid
+          
+          Para más información, visita el README.md incluido en este paquete.
+          EOF
+          
+          # Crear archivo ZIP
+          cd release-temp
+          zip -r "../${PACKAGE_NAME}.zip" "$PACKAGE_NAME"
+          cd ..
+          
+          # Crear archivo TAR.GZ
+          tar -czf "${PACKAGE_NAME}.tar.gz" -C release-temp "$PACKAGE_NAME"
+          
+          # Generar checksums
+          sha256sum "${PACKAGE_NAME}.zip" > "${PACKAGE_NAME}.zip.sha256"
+          sha256sum "${PACKAGE_NAME}.tar.gz" > "${PACKAGE_NAME}.tar.gz.sha256"
+          
+          echo "✅ Release package created successfully!"
+          ls -lh ${PACKAGE_NAME}.*
+
+      - name: Generate Release Notes
+        id: release_notes
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          
+          cat > release_notes.md << 'EOF'
+          # 🎉 AgentCamp 2026 - Madrid | Release v$VERSION
+          
+          ¡Bienvenido al paquete oficial de materiales del AgentCamp 2026 Madrid!
+          
+          ## 📦 Contenido del Paquete
+          
+          Este release incluye todos los materiales y recursos del evento:
+          
+          ### 📁 Contenido Incluido
+          
+          - **📄 Documentación**: README completo con toda la información del evento
+          - **🎨 Branding**: Logos, gráficos y materiales visuales de alta calidad
+          - **🎤 Speakers**: Información de los ponentes y sus sesiones
+          - **🤝 Sponsors**: Detalles de los patrocinadores oficiales
+          - **📋 Templates**: Plantillas de PowerPoint para presentaciones
+          - **📜 Licencias**: LICENSE y CODE_OF_CONDUCT
+          
+          ## 📅 Información del Evento
+          
+          - **Workshops**: Viernes 27 de Febrero de 2026
+            - 📍 NTT DATA Spain, Madrid
+            - ⏰ Mañana (10:00-14:00) y Tarde (15:00-19:00)
+          
+          - **Conferencia**: Sábado 1 de Marzo de 2026
+            - 📍 Teatro Goya Multiespacio, Madrid
+            - ⏰ 08:30 - 19:00
+          
+          ## 🔗 Enlaces Útiles
+          
+          - 🌐 **Website**: [globalai.es](https://www.globalai.es)
+          - 📅 **Agenda**: [agentcamp.sessionize.com](https://agentcamp.sessionize.com)
+          - 🎟️ **Entradas**: [Eventbrite](https://www.eventbrite.es/e/entradas-agentcamp-2026-madrid-aka-global-ai-bootcamp-1980480271806)
+          
+          ## 💾 Formatos Disponibles
+          
+          - **ZIP**: Recomendado para Windows
+          - **TAR.GZ**: Recomendado para Linux/macOS
+          
+          Ambos archivos incluyen el mismo contenido. Los checksums SHA256 están disponibles para verificar la integridad de las descargas.
+          
+          ## ✅ Verificación de Integridad
+          
+          Descarga el archivo `.sha256` correspondiente y verifica:
+          
+          ```bash
+          # Para ZIP
+          sha256sum -c agentcamp-madrid-2026-v$VERSION.zip.sha256
+          
+          # Para TAR.GZ
+          sha256sum -c agentcamp-madrid-2026-v$VERSION.tar.gz.sha256
+          ```
+          
+          ## 🎯 Temas Principales
+          
+          - 🤖 Agentes de IA y arquitecturas multiagente
+          - 🔌 Model Context Protocol (MCP)
+          - 🏭 Microsoft Foundry
+          - 💡 Microsoft Copilot
+          - 📊 Microsoft Fabric
+          - 🎓 Azure Machine Learning
+          
+          ---
+          
+          **Gracias por tu interés en AgentCamp 2026!** 🚀
+          
+          Si tienes preguntas, visita nuestro repositorio o contacta con los organizadores.
+          EOF
+          
+          # Reemplazar la variable VERSION
+          sed -i "s/\$VERSION/${VERSION}/g" release_notes.md
+          
+          echo "notes_file=release_notes.md" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: AgentCamp 2026 Madrid - v${{ steps.version.outputs.version }}
+          body_path: release_notes.md
+          draft: false
+          prerelease: ${{ github.event.inputs.prerelease || false }}
+          files: |
+            agentcamp-madrid-2026-v${{ steps.version.outputs.version }}.zip
+            agentcamp-madrid-2026-v${{ steps.version.outputs.version }}.zip.sha256
+            agentcamp-madrid-2026-v${{ steps.version.outputs.version }}.tar.gz
+            agentcamp-madrid-2026-v${{ steps.version.outputs.version }}.tar.gz.sha256
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Summary
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          echo "## ✅ Release v${VERSION} Created Successfully! 🎉" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📦 Archivos Generados:" >> $GITHUB_STEP_SUMMARY
+          echo "- \`agentcamp-madrid-2026-v${VERSION}.zip\`" >> $GITHUB_STEP_SUMMARY
+          echo "- \`agentcamp-madrid-2026-v${VERSION}.tar.gz\`" >> $GITHUB_STEP_SUMMARY
+          echo "- Checksums SHA256 incluidos" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🔗 **Release URL**: https://github.com/${{ github.repository }}/releases/tag/v${VERSION}" >> $GITHUB_STEP_SUMMARY

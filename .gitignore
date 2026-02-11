@@ -48,3 +48,11 @@ ENV/
 # Backup files
 *.bak
 *.backup
+
+# Release packages (generated locally)
+agentcamp-madrid-2026-v*.zip
+agentcamp-madrid-2026-v*.tar.gz
+agentcamp-madrid-2026-v*.sha256
+release-temp/
+*.zip.sha256
+*.tar.gz.sha256
