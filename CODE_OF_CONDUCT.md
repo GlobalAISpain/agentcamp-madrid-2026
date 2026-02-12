@@ -22,8 +22,8 @@ AgentCamp 2026 Madrid (anteriormente Global AI Bootcamp) es parte de la [Global 
   - 📍 NTT DATA Spain, Madrid
   - ⏰ 10:00-14:00 (mañana) | 15:00-19:00 (tarde)
 
-- **🎤 Conferencia Principal**: Sábado 1 de Marzo de 2026
-  - 📍 Teatro Goya Multiespacio, Madrid
+- **🎤 Conferencia Principal**: Sábado 28 de Febrero de 2026
+  - 📍 Escuela Politécnica Superior - Universidad CEU San Pablo, Boadilla del Monte, Madrid
   - ⏰ 08:30-19:00
 
 ---
@@ -88,7 +88,7 @@ Este Código de Conducta aplica tanto en espacios del evento como en espacios p�
 
 - **NTT DATA Spain** (Workshops - 27 de febrero)
   - Salas de talleres, áreas comunes, cafetería, zonas de networking
-- **Teatro Goya Multiespacio** (Conferencia - 1 de marzo)
+- **Universidad CEU San Pablo** (Conferencia - 28 de febrero)
   - Auditorios, salas de sesiones, stands de sponsors, áreas de descanso
 - *👥 Organizadores y Responsabilidades
 
@@ -116,7 +116,7 @@ Tu seguridad y comodidad son nuestra **máxima prioridad**. Si experimentas o pr
 
 3. **En el venue**:
    - **NTT DATA Spain**: Dirígete a la recepción y pide hablar con el coordinador del evento
-   - **Teatro Goya**: Busca el punto de información "AgentCamp Staff"
+   - **Universidad CEU San Pablo**: Busca el punto de información "AgentCamp Staff"
 
 #### Online y Post-Evento
 
@@ -168,7 +168,7 @@ Los organizadores tienen el derecho y la responsabilidad de:
 
 #### Timing y Formato
 - ⏰ **Workshops (27 Feb)**: 4 horas con descansos incluidos
-- ⏰ **Conferencia (1 Mar)**: Slots de 45 minutos + 10 min Q&A
+- ⏰ **Conferencia (28 Feb)**: Slots de 45 minutos + 10 min Q&A
 - ✅ Respetar estrictamente el tiempo asignado
 - ✅ Dejar tiempo suficiente para preguntas del público
 
@@ -183,7 +183,7 @@ Los organizadores tienen el derecho y la responsabilidad de:
 
 Nos esforzamos por hacer AgentCamp 2026 accesible para todos:
 
-- ♿ **Accesibilidad física**: Ambos venues (NTT DATA y Teatro Goya) cuentan con acceso para personas con movilidad reducida
+- ♿ **Accesibilidad física**: Ambos venues (NTT DATA y Universidad CEU San Pablo) cuentan con acceso para personas con movilidad reducida
 - 🦻 **Asistencia auditiva**: Sistemas de amplificación disponibles en salas principales
 - 👁️ **Materiales**: Presentaciones diseñadas considerando daltonismo y legibilidad
 - 🧠 **Neurodiversidad**: Respetamos diferentes formas de procesar información y participar
@@ -339,10 +339,10 @@ Bajo los siguientes términos:
 - ✅ No acceder a áreas restringidas
 - ✅ Dejar los espacios limpios y ordenados
 
-#### Teatro Goya Multiespacio (1 Mar - Conferencia)
+#### Universidad CEU San Pablo (28 Feb - Conferencia)
 - ✅ No consumir alimentos dentro de auditorios
 - ✅ Respetar capacidad máxima de salas
-- ✅ Seguir indicaciones del personal del teatro
+- ✅ Seguir indicaciones del personal de la universidad
 - ✅ Evacuar ordenadamente en caso de emergencia
 ## Aplicación
 

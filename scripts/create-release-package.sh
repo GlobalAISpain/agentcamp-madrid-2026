@@ -152,10 +152,10 @@ Archivos incluidos:
    
    🛠️ 6 talleres prácticos de 4 horas cada uno
 
-🎤 Conferencia Principal - Sábado 1 de Marzo de 2026
-   📍 Ubicación: Teatro Goya Multiespacio
-                 C. de Goya, 5
-                 28001 Madrid, España
+🎤 Conferencia Principal - Sábado 28 de Febrero de 2026
+   📍 Ubicación: Escuela Politécnica Superior - Universidad CEU San Pablo
+                 Av. de Montepríncipe, s/n
+                 28668 Boadilla del Monte, Madrid, España
    
    ⏰ Horario: 08:30 - 19:00
    

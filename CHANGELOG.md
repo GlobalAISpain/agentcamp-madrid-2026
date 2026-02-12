@@ -16,7 +16,7 @@ Primera release oficial del repositorio AgentCamp 2026 Madrid con todos los mate
 #### 📄 Documentación
 - README completo con información del evento
 - Detalles de workshops (27 de febrero de 2026)
-- Información de la conferencia principal (1 de marzo de 2026)
+- Información de la conferencia principal (28 de febrero de 2026)
 - Enlaces a Sessionize, Eventbrite y website oficial
 - CODE_OF_CONDUCT.md para la comunidad
 - LICENSE del proyecto
@@ -55,9 +55,9 @@ Primera release oficial del repositorio AgentCamp 2026 Madrid con todos los mate
 - Ubicación: NTT DATA Spain, Madrid
 - Sesiones de mañana (10:00-14:00) y tarde (15:00-19:00)
 
-#### Conferencia Principal (1 de marzo)
+#### Conferencia Principal (28 de febrero)
 - 8 tracks simultáneos con más de 60 sesiones
-- Ubicación: Teatro Goya Multiespacio, Madrid
+- Ubicación: Escuela Politécnica Superior - Universidad CEU San Pablo, Boadilla del Monte, Madrid
 - Horario: 08:30 - 19:00
 
 #### Temáticas Principales

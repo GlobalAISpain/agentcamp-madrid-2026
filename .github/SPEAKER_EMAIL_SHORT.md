@@ -47,7 +47,7 @@ Hemos preparado todo lo que necesitas en GitHub:
 ## 📅 Recordatorio Fechas
 
 **🎓 Workshops** - 27 Feb | NTT DATA Spain | 10:00-14:00 / 15:00-19:00  
-**🎤 Conferencia** - 1 Mar | Teatro Goya | 08:30-19:00
+**🎤 Conferencia** - 28 Feb | Universidad CEU San Pablo | 08:30-19:00
 
 ---
 

@@ -71,7 +71,7 @@ Usa este código especial al registrarte en Eventbrite:
 
 2. **Selecciona tu entrada**:
    - Si participas en **Workshops (27 Feb)**: Selecciona la sesión correspondiente
-   - Si participas en **Conferencia (1 Mar)**: Selecciona "Entrada General"
+   - Si participas en **Conferencia (28 Feb)**: Selecciona "Entrada General"
 
 3. **Introduce el código**: `SP34K3R-MAD26`
    - Este código te identificará como speaker
@@ -96,13 +96,13 @@ Usa este código especial al registrarte en Eventbrite:
 
 🗺️ [Ver en Google Maps](https://maps.app.goo.gl/jabBVBQEkRQkC8e86)
 
-### 🎤 Conferencia - Sábado 1 de Marzo de 2026
-- **Ubicación**: Teatro Goya Multiespacio
-- **Dirección**: C. de Goya, 5, 28001 Madrid
+### 🎤 Conferencia - Sábado 28 de Febrero de 2026
+- **Ubicación**: Escuela Politécnica Superior - Universidad CEU San Pablo
+- **Dirección**: Av. de Montepríncipe, s/n, 28668 Boadilla del Monte, Madrid
 - **Horario**: 08:30 - 19:00
 - **Formato**: 8 tracks simultáneos, sesiones de 45 min + 10 min Q&A
 
-🗺️ [Ver en Google Maps](https://maps.app.goo.gl/q4w2VqVYyhZt2uUv7)
+🗺️ [Ver en Google Maps](https://maps.app.goo.gl/HDTD7W5duxaitWWUA)
 
 ---
 
@@ -123,7 +123,7 @@ Usa este código especial al registrarte en Eventbrite:
 - Tendremos soporte técnico disponible durante todo el taller
 - Asegúrate de tener **material de respaldo** por si hay problemas de conectividad
 
-### Para Conferencia (1 Mar)
+### Para Conferencia (28 Feb)
 - **Resolución recomendada**: 16:9 (1920x1080)
 - **Formato**: PowerPoint (.pptx) o PDF
 - Envía tu presentación **24 horas antes** como backup
